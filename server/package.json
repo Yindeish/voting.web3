@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "hardhat": "npx hardhat init",
+    "hardhat:compile": "npx hardhat compile",
+    "hardhat:ignition": "npx hardhat ignition deploy ./ignition/modules/Lock.ts",
+    "hardhat:deploy": "npx hardhat deploy --network localhost",
+    "hardhat:test": "npx hardhat run test/Lock.ts",
+    "harhat:node": "npx hardhat node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox-viem": "^4.1.0",
+    "hardhat": "2.26.3"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0"
+  }
+}
